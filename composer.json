@@ -1,0 +1,42 @@
+{
+    "name": "gdpr-extensions-com/gdpr-extensions-com-gm",
+    "type": "typo3-cms-extension",
+    "description": "GDPR Google Map empowers you to add content element Google Map. It supports single site and multisite on your TYPO3 project.",
+    "authors": [],
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms-core": "^11.5 || ^12.4",
+        "gdpr-extensions-com/gdpr-extensions-com-cm": "^1.0"
+    },
+    "require-dev": {
+        "typo3/testing-framework": "^6.9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "GdprExtensionsCom\\GdprExtensionsComGm\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GdprExtensionsCom\\GdprExtensionsComGm\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "typo3-ter/gdpr-extensions-com-gm": "self.version"
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+        ]
+    },
+    "extra": {
+        "typo3/cms": {
+            "web-dir": ".Build/Web",
+            "extension-key": "gdpr_extensions_com_gm"
+        }
+    }
+}

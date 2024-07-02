@@ -1,0 +1,11 @@
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+
+  GdprExtensionsCom\GdprExtensionsComGm\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'

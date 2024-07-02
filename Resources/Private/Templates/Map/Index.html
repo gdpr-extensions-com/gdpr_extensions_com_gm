@@ -1,0 +1,83 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="customCss">
+  <link rel="stylesheet" href="{f:uri.resource(path: 'EXT:gdpr_extensions_com_gm/Resources/Public/css/leaflet.css')}" />
+</f:section>
+
+<f:section name="customJs">
+  <script src="{f:uri.resource(path: 'EXT:gdpr_extensions_com_gm/Resources/Public/js/leaflet.js')}"></script>
+</f:section>
+
+<f:section name="content">
+  
+  <f:if condition="{map}">
+    <f:for each="{map}" as="singleMap" iteration="mapIterator">
+      <div id="map{mapIterator.index}" class="map-container"></div>
+      <span class="d-none" id="mapLon{mapIterator.index}">
+        <f:format.raw>{singleMap.lon}</f:format.raw>
+      </span>
+      <span class="d-none" id="mapLat{mapIterator.index}">
+        <f:format.raw>{singleMap.lat}</f:format.raw>
+      </span>
+      <span class="d-none" id="mapZoom{mapIterator.index}">
+        <f:format.raw>{singleMap.zoom}</f:format.raw>
+      </span>
+      <span class="d-none" id="iconPath{mapIterator.index}">
+        <f:format.raw>{singleMap.iconPath}</f:format.raw>
+      </span>
+      <span class="d-none" id="locations{mapIterator.index}">
+        <f:format.raw>{singleMap.locations}</f:format.raw>
+      </span>
+      <f:image src="{singleMap.map_path}" style="display: none" id="imageMAP{mapIterator.index}" />
+      <f:comment>
+        <img src="{singleMap.map_path}" style="display:none" id="imageMAP{mapIterator.index}">
+      </f:comment>
+    </f:for>
+
+    <style>
+      .map-container {
+        height: 500px;
+        width: 500px;
+        margin-bottom: 20px;
+      }
+
+      .d-none {
+        display: none;
+      }
+    </style>
+
+    <script>
+      const calculateMaxZoom = (imageSize, tileSize = 256) => {
+        let maxZoom = 0;
+        while ((tileSize << maxZoom) < imageSize) {
+          maxZoom++;
+        }
+        return maxZoom;
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const maps = document.querySelectorAll('.map-container');
+        maps.forEach((mapElement, index) => {
+          const img = document.getElementById('imageMAP' + index);
+          const [h, w] = [img.height, img.width];
+          const mapMaxZoom = calculateMaxZoom(Math.max(h, w));
+          const map = L.map(mapElement.id, {
+            crs: L.CRS.Simple,
+            minZoom: 1,
+            maxZoom: mapMaxZoom,
+            zoom: 1,
+          });
+          map.setView(map.unproject(L.point(w / 2, h / 2)));
+          const southWest = map.unproject([0, h], map.getMaxZoom() - 1);
+          const northEast = map.unproject([w, 0], map.getMaxZoom() - 1);
+          const bounds = new L.LatLngBounds(southWest, northEast);
+          L.imageOverlay(img.src, bounds).addTo(map);
+          map.setMaxBounds(bounds);
+        });
+      });
+    </script>
+  </f:if>
+</f:section>
+
+</html>

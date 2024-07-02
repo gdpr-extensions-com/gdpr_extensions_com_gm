@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:gdpr_extensions_com_gm/Resources/Private/Language/locallang_csh_tx_gdprextensionscomgm_domain_model_map.xlf" date="2023-12-04T08:40:36Z" product-name="gdpr_extensions_com_gm">
+		<header/>
+		<body>
+			<trans-unit id="title.description" resname="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="iicon_path.description" resname="iicon_path.description">
+				<source>iiconPath</source>
+			</trans-unit>
+			<trans-unit id="map_path.description" resname="map_path.description">
+				<source>mapPath</source>
+			</trans-unit>
+			<trans-unit id="locations.description" resname="locations.description">
+				<source>locations</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

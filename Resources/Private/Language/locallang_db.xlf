@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:gdpr_extensions_com_gm/Resources/Private/Language/locallang_db.xlf" date="2023-12-04T08:40:36Z" product-name="gdpr_extensions_com_gm">
+		<header/>
+		<body>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_map" resname="tx_gdprextensionscomgm_domain_model_map">
+				<source>Map</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_map.description" resname="tx_gdprextensionscomgm_domain_model_map.description">
+				<source>Map</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_map.title" resname="tx_gdprextensionscomgm_domain_model_map.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_map.title.description" resname="tx_gdprextensionscomgm_domain_model_map.title.description">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_map.iicon_path" resname="tx_gdprextensionscomgm_domain_model_map.iicon_path">
+				<source>Icon Path</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_map.iicon_path.description" resname="tx_gdprextensionscomgm_domain_model_map.iicon_path.description">
+				<source>Icon Path</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_map.map_path" resname="tx_gdprextensionscomgm_domain_model_map.map_path">
+				<source>Map Path</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_map.map_path.description" resname="tx_gdprextensionscomgm_domain_model_map.map_path.description">
+				<source>Map Path</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_map.map_path" resname="tx_gdprextensionscomgm_domain_model_map.map_path">
+				<source>Map Path</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_map.map_path.description" resname="tx_gdprextensionscomgm_domain_model_map.map_path.description">
+				<source>Map Path</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_map.locations" resname="tx_gdprextensionscomgm_domain_model_map.locations">
+				<source>Locations</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_map.locations.description" resname="tx_gdprextensionscomgm_domain_model_map.locations.description">
+				<source>Locations</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_maplocation" resname="tx_gdprextensionscomgm_domain_model_maplocation">
+				<source>Map Location</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_maplocation.description" resname="tx_gdprextensionscomgm_domain_model_maplocation.description">
+				<source>Map Location</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_maplocation.title" resname="tx_gdprextensionscomgm_domain_model_maplocation.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_maplocation.title.description" resname="tx_gdprextensionscomgm_domain_model_maplocation.title.description">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_maplocation.address" resname="tx_gdprextensionscomgm_domain_model_maplocation.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_maplocation.address.description" resname="tx_gdprextensionscomgm_domain_model_maplocation.address.description">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_maplocation.lat" resname="tx_gdprextensionscomgm_domain_model_maplocation.lat">
+				<source>Lat</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_maplocation.lat.description" resname="tx_gdprextensionscomgm_domain_model_maplocation.lat.description">
+				<source>Lat</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_maplocation.lon" resname="tx_gdprextensionscomgm_domain_model_maplocation.lon">
+				<source>Lon</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_maplocation.lon.description" resname="tx_gdprextensionscomgm_domain_model_maplocation.lon.description">
+				<source>Lon</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_maplocation.map" resname="tx_gdprextensionscomgm_domain_model_maplocation.map">
+				<source>Map</source>
+			</trans-unit>
+			<trans-unit id="tx_gdprextensionscomgm_domain_model_maplocation.map.description" resname="tx_gdprextensionscomgm_domain_model_maplocation.map.description">
+				<source>Map</source>
+			</trans-unit>
+			<trans-unit id="tx_gdpr_extensions_com_gm_gdprextensionscommap.name" resname="tx_gdpr_extensions_com_gm_gdprextensionscommap.name">
+				<source>Google Map</source>
+			</trans-unit>
+			<trans-unit id="tx_gdpr_extensions_com_gm_gdprextensionscommap.description" resname="tx_gdpr_extensions_com_gm_gdprextensionscommap.description">
+				<source></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
